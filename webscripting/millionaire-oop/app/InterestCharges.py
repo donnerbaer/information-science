@@ -46,7 +46,7 @@ class InterestCharges():
         if not isinstance(self.__money, float):
             return 'money is not a float'
         if not isinstance(self.__interestRate, float):
-            return 'interest charges is no float'
+            return 'interest charges is not float'
         if self.__money <= float(self.__moneyMinimumValue):
             return 'money is less or equal zero (money<=0)'
         result = self.__money
