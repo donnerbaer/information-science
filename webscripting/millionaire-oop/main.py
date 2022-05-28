@@ -19,9 +19,12 @@ def becomeAMillionaire():
     interestCharges = request.forms.get('interestCharges')
     #create a new object from InterestCharges()
     IC = aIC.InterestCharges(money,interestCharges)
-    interest_rate = IC.calculateInterestRate(IC.getInterestCharges())
-    IC.setInterestRate(interest_rate)
-    IC.setMsg(IC.calcTimeInYears())
+    interestRate = IC.calculateInterestRate(IC.getInterestCharges())
+    IC.setInterestRate(interestRate)
+    if IC.isCalcTimeInYearsPossible():
+        IC.setMsg(IC.calcTimeInYears())
+    else:
+        IC.setMsg(IC.isCalcTimeInYearsPossibleProblemHandling())
     return template('app/millionaire', money = IC.getMoney(), interestCharges = IC.getInterestRate(), msg = IC.getMsg())
 
 
