@@ -17,7 +17,7 @@
   </header>
   <main class="container my-4">
  
-  <form class="py-5" action="" method="post">
+  <form class="py-5" action="/" method="post">
       <h1 class="h3 mb-3 fw-normal">How long to become a Millionaire?</h1>
 
       <div class="form-floating">
@@ -27,25 +27,25 @@
 
     <div class="my-3">
       <div class="form-check">
-        <input class="form-check-input" type="radio" name="interestCharges" id="flexRadioDefault1" value="1.00" 
+        <input class="form-check-input" type="radio" name="interestCharges" id="flexRadioDefault1" value="1.00" \\
           % if interestCharges == 1.01 or interestCharges == None: 
-            checked
+            checked\\
           % end
         >
         <label class="form-check-label" for="flexRadioDefault1">1.00&#37;</label>
       </div>
       <div class="form-check">
-        <input class="form-check-input" type="radio" name="interestCharges" id="flexRadioDefault2" value="2.00" 
+        <input class="form-check-input" type="radio" name="interestCharges" id="flexRadioDefault2" value="2.00" \\
           % if interestCharges == 1.02: 
-            checked
+            checked\\
           % end
         >
         <label class="form-check-label" for="flexRadioDefault2">2.00&#37;</label>
       </div>
       <div class="form-check">
-        <input class="form-check-input" type="radio" name="interestCharges" id="flexRadioDefault3" value="5.00" 
+        <input class="form-check-input" type="radio" name="interestCharges" id="flexRadioDefault3" value="5.00" \\
           % if interestCharges == 1.05: 
-            checked
+            checked\\
           % end
         >
         <label class="form-check-label" for="flexRadioDefault3">5.00&#37;</label>
